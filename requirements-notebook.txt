@@ -1,0 +1,8 @@
+# Needed to re-run the notebook (includes the app requirements)
+-r requirements.txt
+numpy
+scipy
+matplotlib
+seaborn
+shap
+jupyter
