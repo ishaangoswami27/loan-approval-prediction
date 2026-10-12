@@ -1,4 +1,4 @@
-# 🏦 Loan Approval Checker
+# 🏦 Loan Approval prediction
 
 ![Python](https://img.shields.io/badge/python-3.10%2B-blue)
 ![Streamlit](https://img.shields.io/badge/built%20with-Streamlit-ff4b4b)
@@ -56,7 +56,7 @@ The EMI uses the standard formula with the interest rate and term you enter.
 
 ## The ML model
 
-Trained in [`notebooks/loan_approval_model.ipynb`](notebooks/loan_approval_model.ipynb).
+Trained in [`notebooks/loan_approval_model.ipynb`](notebooks/script.ipynb).
 
 - **Data:** 4,269 loan applications, no missing values or duplicates, 62% approved.
 - **Features (9):** dependents, annual income, loan amount, loan term, CIBIL score, and four asset values (residential, commercial, luxury, bank).
@@ -85,7 +85,6 @@ Without `cibil_score`, the test ROC-AUC falls from 0.999 to 0.60. The model reli
 loan-approval-checker/
 ├── streamlit.py          # Streamlit app
 ├── models/loan_model.pkl       # trained Random Forest (scikit-learn 1.6.1)
-├── notebooks/
 │   └── loan_approval_model.ipynb
 ├── data/                       # put loan_approval_dataset.csv here (not committed)
 ├── requirements-notebook.txt   # notebook dependencies
