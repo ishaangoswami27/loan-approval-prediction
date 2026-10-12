@@ -83,12 +83,11 @@ Without `cibil_score`, the test ROC-AUC falls from 0.999 to 0.60. The model reli
 
 ```
 loan-approval-checker/
-├── app_interactive.py          # Streamlit app
+├── streamlit.py          # Streamlit app
 ├── models/loan_model.pkl       # trained Random Forest (scikit-learn 1.6.1)
 ├── notebooks/
 │   └── loan_approval_model.ipynb
 ├── data/                       # put loan_approval_dataset.csv here (not committed)
-├── docs/screenshot.png         # app screenshot used in this README
 ├── requirements.txt            # app dependencies
 ├── requirements-notebook.txt   # notebook dependencies
 ├── .streamlit/config.toml
