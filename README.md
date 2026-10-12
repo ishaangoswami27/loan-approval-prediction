@@ -88,7 +88,6 @@ loan-approval-checker/
 ├── notebooks/
 │   └── loan_approval_model.ipynb
 ├── data/                       # put loan_approval_dataset.csv here (not committed)
-├── requirements.txt            # app dependencies
 ├── requirements-notebook.txt   # notebook dependencies
 ├── .streamlit/config.toml
 ├── .gitignore
@@ -99,7 +98,7 @@ loan-approval-checker/
 ## Run locally
 
 ```bash
-git clone https://github.com/YOUR-USERNAME/loan-approval-checker.git
+git clone https://github.com/ishaangoswami27/loan-approval-checker.git
 cd loan-approval-checker
 
 python -m venv .venv
@@ -107,7 +106,7 @@ python -m venv .venv
 # Mac/Linux: source .venv/bin/activate
 
 pip install -r requirements.txt
-streamlit run app_interactive.py
+streamlit run streamlit.py
 ```
 
 The app opens at http://localhost:8501.
@@ -130,7 +129,7 @@ The pickle only loads with the scikit-learn version it was trained with (1.6.1).
 
 1. Push this repo to GitHub (it must include `models/loan_model.pkl`).
 2. Go to [share.streamlit.io](https://share.streamlit.io) and sign in with GitHub.
-3. Click **Create app**, choose this repo, branch `main`, and main file `app_interactive.py`.
+3. Click **Create app**, choose this repo, branch `main`, and main file `streamlit.py`.
 4. Click **Deploy**, then paste the link at the top of this README.
 
 ## Tech stack
